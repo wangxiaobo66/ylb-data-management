@@ -19,9 +19,7 @@ gulp.task('devJs', () =>
     }
     */
     gulp.src('./static/js/pages/*.js')
-        .pipe(babel({
-            presets: ['env']
-        }))
+        .pipe(babel())
         .pipe(gulp.dest('./dist/js'))
 
 );
